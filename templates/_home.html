@@ -1,0 +1,91 @@
+{% extends "_header.html" %}
+{% block content %}
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $('#bottom_links').hide();
+});
+</script>
+  <!-- HTML -->
+
+      <div class="bg-white">
+  	    <div class="container_12 pt-30">
+  				<div class="dib">
+            <a href="/views/popularity_view">
+    					<div class="grid_4 home-link " >
+    							<i class="fa fa-star fa-5x sky-blue"></i>
+    							<p class=" text-icon p-5 grey"> Popular O&D </p>
+    					</div>
+            </a>
+            <a href="/views/fastestgrowing_view">
+              <div class="grid_4 home-link " >
+                <i class="fa fa-line-chart fa-5x sky-blue"></i>
+                <p class=" text-icon p-5 grey"> Fastest growing </p>
+              </div>
+            </a>
+            <a href="/views/trending_view">
+              <div class="grid_4 home-link " >
+                <i class="fa fa-area-chart fa-5x sky-blue"></i>
+                <p class=" text-icon p-5 grey"> Trends </p>
+              </div>
+            </a>
+            <a href="/views/itineraries_view">
+              <div class="grid_4 home-link " >
+                <i class="fa fa-map-signs fa-5x sky-blue"></i>
+                <p class=" text-icon p-5 grey"> Connections </p>
+              </div>
+            </a>
+            <a href="/views/newflights_view">
+              <div class="grid_4 home-link " >
+                <i class="fa fa-plane fa-5x sky-blue"></i>
+                <p class=" text-icon p-5 grey"> New Flights </p>
+              </div>
+            </a>
+            <a href="/views/airport_view">
+              <div class="grid_4 home-link " >
+                <i class="fa fa-bar-chart fa-5x sky-blue"></i>
+                <p class=" text-icon p-5 grey"> Hub Graph </p>
+              </div>
+            </a>
+            <a href="/views/catchment_view">
+              <div class="grid_4 home-link " >
+                <i class="fa fa-bullseye fa-5x sky-blue"></i>
+                <p class=" text-icon p-5 grey"> Catchement & Leakage </p>
+              </div>
+            </a>
+            <a href="/views/x__labs">
+              <div class="grid_4 home-link " >
+                <i class="fa fa-flask fa-5x sky-blue"></i>
+                <p class=" text-icon p-5 grey"> Labs </p>
+              </div>
+            </a>
+            <a href="/views/extract_view">
+              <div class="grid_4 home-link " >
+                <i class="fa fa-database fa-5x sky-blue"></i>
+                <p class=" text-icon p-5 grey"> Data Sample </p>
+              </div>
+            </a>
+					</div>
+         <div class="container_12 info-section">
+           <div class="dib">
+             <div class="grid_2">
+                 <i class="fa fa-info-circle fa-5x "></i>
+             </div>
+             <div class="grid_10">
+                <span>
+                Based on Skyscanner’s Travel Insight data,
+                each of the dashboards features indexed data updated on a monthly basis.
+                Take a look through the graphs and charts by clicking the icons above,
+                which feature 21st Century data drawn from the more than 190 million monthly searches on Skyscanner.
+                </span>
+             </div>
+           </div>
+         </div>
+         <div style="display:none">
+           <img src="{{ url_for('static', filename='img/loading.gif') }}"></img>
+           <img src="{{ url_for('static', filename='img/loading_extra.gif') }}"></img>
+         </div>
+      </div>
+    </div>
+
+{% endblock %}

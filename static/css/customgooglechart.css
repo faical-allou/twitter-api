@@ -1,0 +1,21 @@
+
+.google-visualization-controls-label {
+        font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        width: 200px;
+        color: #272133;
+      }
+.google-visualization-controls-label LABEL {
+              min-width: 130px;
+            }
+.google-visualization-controls-stringfilter INPUT {width: 80px;}
+
+.goog-menu-vertical {display: none !important}
+
+.goog-combobox {width: 100px !important; height: 25px !important; border: none !important}
+.goog-combobox input {width: 100px !important; height: 25px !important; border: 1px solid #b5b6b5 !important}
+.goog-combobox-active input {width: 100px !important; height: 25px !important}
+.goog-combobox-button { display: none !important}
+
+.google-visualization-table .gradient {background-image: none !important}
+
+#map {width: 720px; height: 550px }
